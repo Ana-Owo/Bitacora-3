@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <header>
+            <img src="../imagenes/logobitacora.png" alt="">
+            <h1>Bitácora Parcial 3</h1>
+        </header>
+        <nav>
+            <a href="../index.html">Formularios CSS</a>
+            <a href="index2.html">Table</a>
+            <a href="index3.html">Especificidad CSS</a>
+            <a href="index4.html">Pseudoelementos</a>
+            <a href="index5.html">Colores en páginas web</a>
+            <a href="index6.html">Header</a>
+            <a href="index7.html">Footer</a>
+        </nav>
+        <section>
+            <div class="titulo">
+                <h1>Colores en páginas web</h1>
+            </div>
+
+            <div class="izq">
+                <h2>Ideas principales</h2>
+                <div class="texto1">
+                    <ul>
+                        <li>En la web se utiliza el modelo RGB, que trabaja añadiendo luz. Cada color es representado
+                            por una combinación de los tres colores: rojo, verde y azul, con valores de 0 a 255.
+                        </li>
+                        <li>El canal alfa puede añadir transparencia (de 0 a 1).</li>
+                        <li>Hexadecimal: Los colores se representan mediante un código de 6 caracteres en base 16. Cada
+                            par de
+                            caracteres representa un color: rojo, verde y azul.</li>
+                        <li>Htsl: Utiliza el círculo cromático para definir colores:</li>
+                        <li>Hue (Matiz) de 0° a 360° (Rojo = 0°, Verde = 120°, Azul = 240°).</li>
+                        <li>Saturation (Saturación) de 0% a 100% (0% = gris, 100% = máximo color).</li>
+                        <li>Lightness (Luminosidad) de 0% a 100% (0% = negro, 100% = blanco).</li>
+                        <li>Los colores transmiten sensaciones y emociones (tranquilidad, seguridad, confianza, pasión,
+                            etc.), y estas pueden influir en la percepción del sitio web.</li>
+                        <li>Es importante elegir colores que se alineen con el mensaje y el público objetivo de la
+                            página web.</li>
+                        <li> Generalmente, se recomienda usar 2 o 3 colores principales y trabajar con diferentes
+                            tonalidades o variaciones de estos.</li>
+                        <li>El contraste se crea combinando colores no relacionados para resaltar textos o imágenes.
+                        </li>
+                        <li>La paleta de colores seleccionada debe aplicarse uniformemente en todo el sitio web para dar
+                            cohesión y unidad.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="dere">
+
+                <h2>Apuntes de la clase</h2>
+
+                <div class="texto2">
+                    <p>Se trabajará con el modelo rgb o standard rgb, aquí se agrega la luz y en cmyk se va quitando la
+                        luz.
+                        El color no existe sin la luz, ya que es el reflejo de la luz. En una pantalla siempre se maneja
+                        en rgb.
+                        En la web hay 7 formas de representar colores</p>
+                    <div class="cuadro">
+                        <h3>Hexadecimal </h3>
+                        <p>con el # trabaja en base de 16 caracteres (0123456789ABCDEF) se va combinando para formar un
+                            color. El cero representa que no hay color (000000- negro), el f muestra el máximo del tono
+                            del color que se utilice. Los 6 caracteres están divididos de 2 en 2 los primero dos
+                            representan el color rojo (#ff0000), los siguientes 2 representan el verde (#00ff00- verde)
+                            y los últimos dos representan el azul (#0000ff). </p>
+                    </div>
+                    <div class="cuadro">
+                        <h3>Rgb</h3>
+                        <p>Son tres colores; red(0-255), green (0-255), blue (0-255) cada uno nos da 256 valores.
+                            (256x256x256) Nos da en total 16,777,216 de colores
+                            El canal alfa, se agrega de 0 al 1 siendo el 0 totalmente transparente, teniendo diferentes
+                            variaciones hasta el 1, siendo el color sólido. Entre más transparencia el 1 va bajando </p>
+                        <p>El color rojo seria rgb(255,0,0), el verde rgb(0,255,0) y el azul rgb(0,0,255) </p>
+                    </div>
+                    <div class="cuadro nuev3">
+                        <h3>Hsl y hsla</h3>
+                        <p>En base al círculo cromático, justo en el centro está un gris al 50%, en las orillas tiene la
+                            máxima intensidad, del centro a la orilla se maneja la saturación y hacia arriba y abajo la
+                            luminosidad.
+                            La luminosidad arriba tiende al color blanco y se le agrega la luminosidad al color y hacia
+                            abajo tiende al color negro quitándole la luminosidad.
+                        </p>
+
+                        <p>Se escribe en grados ya que es un círculo, el hue representado del 0 a 360grados, el rojo
+                            está en el 0, el verde en 120 y el azul en 240.
+
+                            La saturación está representada del 0 al 100%, donde encontramos el cero en el centro, pero
+                            no es el color negro ya que depende de la luminosidad.
+                        </p>
+                    </div>
+
+
+                    <h2>COLOR Y PAGINA WEB </h2>
+                    <p>Los colores en un sitio web pueden ser una herramienta muy eficaz para lograr que los visitantes
+                        se sientas cómodos e interactúen con el sitio web, pero, también una paleta de colores errónea
+                        puede hacer que el visitante no permanezca en el sitio ni siquiera unos segundos.
+
+                        A pesar de que no somos muy conscientes de esto cuando visitamos un sitio web, los colores-
+                        juntos al contenido y los otros elementos visuales- son los que determinan si nos quedamos o nos
+                        vamos. </p>
+                    <div class="cuadro nuev3">
+                        <p>Identificar el público objetivo de tu página web, la mayoría de los colores están asociados a
+                            determinados grupos. La página tiene ante todo que atraer y convencer a la visita, por lo
+                            que hay que seleccionar colores con los que la visita se sienta identificada.</p>
+                        <p>-colores de la misma gama cromática: es decir, diferentes tonos de un mismo color.</p>
+                        <p>-colores complementarios: aquellos situados próximos en la gama cromática</p>
+                        <p>-colores opuestos: son aquellos situados justo en el lado opuesto de la gama cromática y que
+                            ayudan al contraste.</p>
+                    </div>
+                </div>
+
+                <div class="imagen">
+                    <img src="../imagenes/color.jpg" alt="Imagen referente a las posiciones">
+                </div>
+
+            </div>
+
+            <div class="izq ap">
+
+                <div class="texto1">
+
+                    <div class="cuadro">
+                        <p>El contraste de color se produce al combinar dos colores que no están relacionados. Esto
+                            permite, por ejemplo, resaltar textos o imágenes. Combina colores claros y colores oscuros
+                            para lograr este efecto visual.
+                        </p>
+                    </div>
+
+                    <div class="cuadro">
+
+                        <p>Se debe elegir una paleta de colores y usarla en todo el sitio de esta manera se le da
+                            uniformidad y sentido de unidad al sitio web.
+
+                            No se debe usar demasiados colores diferentes, con dos o tres es suficiente. Todo el resto
+                            debería estar en la gama de estos colores principales.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="abj">
+                <h2>Resumen</h2>
+                <div class="texto3">
+                    <p>RGB-Se utiliza en pantallas web, con valores de 0 a 255 para cada color.Se puede agregar un canal
+                        alfa para ajustar la transparencia.</p>
+                    <p>Hexadecimal:
+                        Usa 6 caracteres (base 16) para representar colores, con 2 caracteres para cada color primario
+                        (rojo, verde y azul).</p>
+                    <p>HSL (Tono, Saturación, Luminosidad):
+                        Basado en el círculo cromático, con valores para:
+                        Tono (0°-360°), Saturación (0%-100%) y Luminosidad (0%-100%).</p>
+                    <P> Los colores transmiten emociones y sensaciones (tranquilidad, confianza, pasión, etc.) y deben ser elegidos según el mensaje y el público objetivo de la página web.
+                        Armonía de colores:
+                        Utilizar colores de la misma gama, colores complementarios o colores opuestos para crear contrastes y efectos visuales.
+                        Uso moderado de colores:
+                        Limitar el uso de colores a 2 o 3 principales para mantener coherencia y no sobrecargar la página.</P>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

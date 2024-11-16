@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <header>
+            <img src="../imagenes/logobitacora.png" alt="">
+            <h1>Bitácora Parcial 3</h1>
+        </header>
+        <nav>
+            <a href="../index.html">Formularios CSS</a>
+            <a href="index2.html">Table</a>
+            <a href="index3.html">Especificidad CSS</a>
+            <a href="index4.html">Pseudoelementos</a>
+            <a href="index5.html">Colores en páginas web</a>
+            <a href="index6.html">Header</a>
+            <a href="index7.html">Footer</a>
+        </nav>
+        <section>
+            <div class="titulo">
+                <h1>Especificidad CSS</h1>
+            </div>
+            <div class="izq">
+                <h2>Ideas principales</h2>
+                <div class="texto1">
+                    <ul>
+                        <li>La especificidad es el mecanismo que usan los navegadores para decidir qué reglas de estilo
+                            aplicar a un elemento cuando hay varias reglas que afectan al mismo elemento.</li>
+                        <li>Se aplica solo cuando un elemento tiene varias declaraciones CSS dirigidas a él.</li>
+                        <li>Los estilos directos tienen mayor prioridad sobre los heredados de elementos anteriores.
+                        </li>
+                        <li>Si varias reglas tienen la misma especificidad, la última regla en el CSS será la que se
+                            aplique.</li>
+                        <li>Estilos en línea: Se aplican directamente al elemento.</li>
+                        <li>ID: Los selectores ID tienen alta especificidad.</li>
+                        <li>Clases, atributos y pseudo-clases: Tienen una especificidad intermedia.</li>
+                        <li>Elementos y pseudo-elementos: Tienen la especificidad más baja</li>
+                        <li>El selector universal (*) y los valores heredados tienen una especificidad de 0, es decir,
+                            no afectan la jerarquía de especificidad.</li>
+                        <li>El uso de !important anula otras reglas, independientemente de la especificidad.</li>
+                        <li>No se recomienda usar !important porque rompe la cascada natural de las hojas de estilo.
+                        </li>
+                        <li>Si hay dos reglas en conflicto con !important, se aplicará la que tenga mayor especificidad.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dere nuev">
+                <h2>Apuntes de la clase</h2>
+                <div class="texto2 nuev1">
+                    <p>Es el medio por el cual los navegadores deciden que valores de propiedad CSS son los más
+                        relevantes para un elemento, y por lo tanto, se aplicaran. </p>
+                    <p>Solo se aplica cuando el mismo elemento es el objetivo de varias declaraciones. Según las reglas
+                        de css, los elementos dirigidos directamente siempre tendrán prioridad sobre las reglas que un
+                        elemento hereda de su antepasado. </p>
+                    <p>Cuando varias declaraciones tienen la misma especificidad, la última declaración encontrada en
+                        css se aplica al elemento. </p>
+                    <div class="cuadro posit">
+                        <h3>Jerarquia de especificidad </h3>
+                        <p>Cada selector tiene su ligar en la jerarquía de especificidad. Hay cuatro categorías que
+                            definen el nivel de especificidad de un selector </p>
+                        <ul>
+                            <li>Primer nivel- estilos en línea, se adjunta directamente al elemento</li>
+                            <li>Segundo nivel- id </li>
+                            <li>Tercer nivel- clases, atributos y pseudo-clases </li>
+                            <li>Cuarto nivel- elementos y pseudo-elementos </li>
+                        </ul>
+                    </div>
+                    <div class="cuadro posit">
+                        <h3>Reglas de especificidad</h3>
+                        <p>La última regla cuenta: si la misma regla se escribe dos veces en la hoja de estilo externa,
+                            entonces la regla inferior en la hoja de estilo está más cerca del elemento que se va a
+                            diseñar y, por lo tanto, se aplicara: siempre se apicara la última regla.
+                        </p>
+
+                    </div>
+                    <div class="cuadro posit">
+                        <h3>Selector universal</h3>
+                        <p>El selector universal y los valores heredados tienen una especificidad de 0-*, el cuerpo* y
+                            similares tienen una especificidad cero. Los valores heredados también tienen una
+                            especificidad de 0. </p>
+                    </div>
+
+                    <div class="cuadro nuev3">
+                        <h3>La excepción !important </h3>
+                        <p>Cuando se usa una regla !important en una declaración de estilo, esta declaración anula
+                            cualquier otra declaración.
+
+                            Aunque técnicamente !important no tienen nada que ver con la especificidad, interactúa
+                            directamente con ella.
+
+                            Sin embargo, usar !important es una mala práctica y debe evitarse porque dificulta la
+                            depuración al romper la cascada natural en sus hojas de estilo.
+                        </p>
+                        <p>Cuando se aplican dos declaraciones en conflicto con la regla !important al mismo elemento,
+                            se aplicará la declaración con una mayor especificidad. </p>
+                    </div>
+
+                </div>
+                <div class="imagen">
+                    <img src="../imagenes/especificidad.jpg" alt="Imagen referente a las posiciones">
+                </div>
+            </div>
+
+
+            <div class="abj">
+                <h2>Resumen</h2>
+                <div class="texto3">
+                    <p>La especificidad en CSS determina qué reglas de estilo se aplican a un elemento cuando múltiples
+                        reglas afectan al mismo elemento. Se aplica cuando el mismo elemento tiene varias declaraciones
+                        CSS.</p>
+
+                    <p> Estilos en línea: Tienen la mayor prioridad, ya que se aplican directamente al elemento.
+                        ID: Los selectores de ID tienen alta especificidad.
+                        Clases, atributos y pseudo-clases: Tienen una especificidad media.
+                        Elementos y pseudo-elementos: Tienen la especificidad más baja.</p>
+                    <p>La última regla cuenta: Si dos reglas tienen la misma especificidad, se aplicará la última que se encuentre en el CSS.
+                        El selector universal (*) y los valores heredados tienen una especificidad de 0.</p>
+                    <p>El uso de !important hace que esa regla anule cualquier otra, independientemente de la especificidad. 
+                        No se recomienda usar !important, ya que rompe la lógica de cascada de los estilos.
+                        Si se aplican dos reglas con !important al mismo elemento, se aplicará la regla con mayor especificidad.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

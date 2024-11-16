@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <header>
+            <img src="../imagenes/logobitacora.png" alt="">
+            <h1>Bitácora Parcial 3</h1>
+        </header>
+        <nav>
+            <a href="../index.html">Formularios CSS</a>
+            <a href="index2.html">Table</a>
+            <a href="index3.html">Especificidad CSS</a>
+            <a href="index4.html">Pseudoelementos</a>
+            <a href="index5.html">Colores en páginas web</a>
+            <a href="index6.html">Header</a>
+            <a href="index7.html">Footer</a>
+        </nav>
+        <section>
+            <div class="titulo">
+                <h1>Pseudoelementos</h1>
+            </div>
+            <div class="izq">
+                <h2>Ideas principales</h2>
+                <div class="texto1">
+                    <ul>
+                        <li>Pseudo-elementos permiten estilizar partes específicas de un elemento o añadir contenido a
+                            un documento.
+                        </li>
+                        <li>::before: Crea un pseudo-elemento antes del contenido del elemento seleccionado, usado para
+                            añadir contenido estético (con la propiedad content).</li>
+                        <li>::after: Crea un pseudo-elemento después del contenido del elemento seleccionado, también
+                            utilizado para añadir contenido cosmético (con la propiedad content).</li>
+                        <li>los pseudo-elementos ::before y ::after son en línea (inline) por defecto, lo que significa
+                            que se muestran en la misma línea que el contenido del elemento.</li>
+                        <li>los pseudo-elementos permiten agregar contenido visual adicional o estilizar partes
+                            específicas de un elemento sin alterar su estructura HTML.</li>
+
+
+                    </ul>
+                </div>
+            </div>
+            <div class="dere">
+                <h2>Apuntes de la clase</h2>
+                <div class="texto2">
+                    <p>Los pseudoelementos permiten seleccionar y dar estilo a elementos que no existen en el HTML, o
+                        que no son un simple elemento en sí. La sintaxis de los pseudoelementos está precedida de dos
+                        puntos dobles (::) para diferenciarlos de las pseudoclases, las cuales sólo tienen dos puntos
+                        (:).</p>
+                    <div class="cuadro posit">
+                        <h3>::before</h3>
+                        <p>Se utiliza para insertar contenido antes del contenido principal de un elemento. Por ejemplo,
+                            se puede añadir un icono o una etiqueta decorativa antes del texto principal de un botón.
+                        </p>
+                    </div>
+
+                    <div class="cuadro posit">
+                        <h3>::after</h3>
+                        <p>Se emplea para añadir contenido después del contenido principal de un elemento. Por ejemplo,
+                            se puede agregar una sombra o un borde decorativo al final de un bloque de texto.</p>
+                    </div>
+
+
+                    <div class="cuadro nuev3">
+                        <h3>content</h3>
+                        <p>La propiedad content se usa junto con los pseudo-elementos :before y :after para generar
+                            contenido que se adjunta antes o después de un selector CSS.</p>
+                    </div>
+
+
+                    <div class="imagen">
+                        <img src="../imagenes/pseudoelementos.png" alt="Imagen referente a las posiciones">
+                    </div>
+                </div>
+                <div class="abj">
+                    <h2>Resumen</h2>
+                    <div class="texto3">
+                        <p>Los pseudo-elementos en CSS se utilizan para estilizar partes específicas de un documento, a
+                            diferencia de las pseudo-clases que describen estados especiales de un elemento. Por
+                            ejemplo, ::first-line selecciona solo la primera línea del contenido de un elemento. Los
+                            pseudo-elementos ::before y ::after permiten agregar contenido estético antes o después del
+                            contenido de un elemento, respectivamente, usando la propiedad content. Ambos son en línea
+                            por defecto, lo que significa que se muestran junto al texto del elemento.</p>
+                        
+                    </div>
+                </div>
+        </section>
+    </main>
+</body>
+
+</html>
